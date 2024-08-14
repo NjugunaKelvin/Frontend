@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     
     function fetchReviews() {
-        fetch(process.env.BACKEND_URL)
+        fetch('http://localhost:3000/reviews')
             .then(response => response.json())
             .then(reviews => {
                 reviewsContainer.innerHTML = '';
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const reviewText = reviewInput.value.trim();
 
         if (name !== '' && reviewText !== '' && selectedRating > 0) {
-            fetch(process.env.BACKEND_URL, {
+            fetch('http://localhost:3000/reviews', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
