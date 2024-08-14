@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const reviewForm = document.getElementById('review-form');
     const showFormButton = document.getElementById('show-form-button');
     let selectedRating = 0;
+    const dotenv = require('dotenv');
+    dotenv.config();
 
     
     // Navigation Bar
@@ -15,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     
     function fetchReviews() {
-        fetch('http://localhost:3000/reviews')
+        fetch(process.env.BACKEND_URL)
             .then(response => response.json())
             .then(reviews => {
                 reviewsContainer.innerHTML = '';
@@ -60,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const reviewText = reviewInput.value.trim();
 
         if (name !== '' && reviewText !== '' && selectedRating > 0) {
-            fetch('http://localhost:3000/reviews', {
+            fetch(process.env.BACKEND_URL, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
