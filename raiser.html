@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raisa's Cake Bakery</title>
+    <link rel="stylesheet" href="raiser.css">
+    <link rel="icon" href="raisa/logo.jpg">
+</head>
+<body>
+    <nav class="navbar">  
+        <img src="raisa/logo.jpg" alt="" height="80px">
+        <div class="logo" id="logo">
+            <strong>Raisa's</strong>
+            <br><strong id="cake-shop">CAKE & PASTERIES</strong>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#logo">Home</a></li>
+            <li><a href="#about-us">About</a></li>
+            <li><a href="#products">Cakes</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menubar" id="menubar">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>        
+    </nav>
+    <br><br>
+    <!--The main section-->
+    <div class="home" id="home">
+        <div class="home-about">
+            <h1>CAKE YOUR DAY <strong class="myh1">WITH RAISA'S CAKES</strong></h1>
+            
+            <p>We bake all types of Cakes
+                based on your preference. Here,
+                the customer is literally our boss.
+                For any type of cake, just hit us up.
+            </p>
+            <br>
+            <div class="buttons">
+                <a href="#last-logo">
+                    <button class="myBtn">
+                        Place Order
+                    </button>
+                </a>
+                <a href="#products">
+                    <button class="myBtn">
+                        View Samples
+                    </button>
+                </a>
+            </div>
+        </div>
+        <div class="div2">
+            <img src="/cakes_images/images/back.jpg" alt="cake" height="100%" id="main-image">
+        </div>
+    </div>
+    <br>
+    <section class="about-us" id="about-us">
+        <h1>About Us</h1>
+        <p>
+            Welcome to Raisa's Cake and Pastries where passion
+            and perfection come together in every bake. Founded
+            by Raisa, a dedicated artisan with a love for the sweet
+            side of life, our bakery is committed to creating delightful
+            cakes and pasteries that turn any occassion into a celebration.
+            Our menu offers a wide variety of treats, from elegant wedding cakes
+            to whimsical birthday creations and everything in between. Each 
+            item is handcrafted with care, designed to not only taste amazing
+            but to also look stunning. Whether you're planning a big everything
+            or just want to indulge in a sweet treat, Raisa's Cake and Pasteries 
+            has something special for you.
+            <br><br>
+            At Raisa's, we believe that every bite should be a moment of joy.
+            Let us be part of your special moments with our beautifully
+            crafted confections. Experience the difference that passion and 
+            quality make.
+        </p>
+    </section>
+    <br>
+    <section class="products" id="products">
+        <h1>Our Products</h1>
+        <h4>We make all types of cakes</h4>
+        <div class="categories">
+            <div class="wedding">
+                <div class="cakes-container">
+                    <h3>Wedding Cakes</h3>
+                    <a href="/cakes/wedding.html">
+                        <button class="viewBtn">View Cakes</button>
+                    </a>
+                </div>
+            </div>
+            <div class="birthday">
+                <div class="cakes-container">
+                    <h3>Birthday Cakes</h3>
+                    <a href="/cakes/birthday.html">
+                        <button class="viewBtn">View Cakes</button>
+                    </a>
+                </div>
+            </div>
+            <div class="amniversary">
+                <div class="cakes-container">
+                    <h3>Anniversary Cakes</h3>
+                    <a href="cakes/anniversary.html">
+                        <button class="viewBtn">View Cakes</button>
+                    </a>
+                </div>
+            </div>
+            <div class="kids">
+                <div class="cakes-container">
+                    <h3>Cakes for Kids</h3>
+                    <a href="/cakes/kids.html">
+                        <button class="viewBtn">View Cakes</button>
+                    </a>
+                </div>
+            </div>
+            <div class="graduation">
+                <div class="cakes-container">
+                    <h3>Graduation Cakes</h3>
+                    <a href="/cakes/graduation.html">
+                        <button class="viewBtn">View Cakes</button>
+                    </a>
+                </div>
+            </div>
+            <div class="others">
+                <div class="cakes-container">
+                    <h3>Other Types</h3>
+                    <a href="cakes/other.html">
+                        <button class="viewBtn">View Cakes</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <br><br><br>
+
+    <section class="review-section">
+        <h2>Customer Reviews</h2>
+        <div class="reviews-container" id="reviews-container">
+            <div class="reviews" id="reviews">
+                <div class="review">
+                    <div class="name">John Doe</div>
+                    <div class="text">The cakes are absolutely amazing! I loved every bite.</div>
+                </div>
+                <div class="review">
+                    <div class="name">Jane Smith</div>
+                    <div class="text">Wonderful pastries and excellent customer service.</div>
+                </div>
+                <div class="review">
+                    <div class="name">Alice Johnson</div>
+                    <div class="text">Best cakes in town! Highly recommend Raisa's Cake and Pastries.</div>
+                </div>
+            </div>
+        </div>
+        <button id="show-form-button" onclick="toggleForm()">Add Review</button>
+        <div class="review-form" id="review-form" style="display: none;">
+            <input type="text" id="name-input" placeholder="Your Name" required>
+            <textarea id="review-input" placeholder="Write your review here..."></textarea>
+            <button id="submit" onclick="addReview()">Submit Review</button>
+            <div class="star-rating">
+                <span class="star" data-value="5">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="1">&#9733;</span>
+            </div>
+            
+        </div>
+    </section>
+    
+    <div class="last-logo" id="last-logo">
+        Just Make a Call and You'll get your cake done.
+        <br><br>
+        <span>0727168998</span>
+    </div>
+    <br><br><br>
+        <section class="contact" id="contact">
+        <h1>Contacts</h1>
+        <div class="contact-container">
+            <div class="menu">
+                <h3>Menu</h3>
+                <ul>
+                    <li><a href="#menubar">Home</a></li>
+                    <li><a href="#about-us">About</a></li>
+                    <li><a href="#products">Cakes</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="contact-us">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><a href="">raisercakes@gmail.com</a></li>
+                    <li><a href="">+254727168998</a></li>
+                    <li><a href="">254 Njoro, Egerton</a></li>
+                </ul>
+            </div>
+            <div class="social-media">
+                <h3>Social Media</h3>
+                <ul>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Instagram</a></li>
+                    <li><a href="">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <div class="hr">
+        <hr>
+    </div>
+    <footer>
+        <br>
+        <img src="raisa/zoomed_logo.png" alt="" height="70px" width="90px">
+        <p>All rights reserved</p>
+        <p>Copyright &copy; 2024 Raiser's Cakes. All rights reserved.</p>
+    </footer>
+    <br>
+
+    <script  src="./raiser.js"></script>
+</body>
+</html>
