@@ -523,6 +523,7 @@ footer{
 @media (min-width: 600px) and (max-width: 900px) {
     body {
         font-size: 16px;
+        overflow-x: hidden;
     }
     .navbar{
         flex-direction: row;
@@ -630,6 +631,9 @@ footer{
 }
 /* devices over 900px */
 @media (min-width: 900px) and (max-width: 1000px){
+    body{
+        overflow-x: hidden;
+    }
     .nav-links{
         justify-content: right;
         margin-left: 20%;
