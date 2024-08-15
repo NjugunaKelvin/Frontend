@@ -3,10 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const reviewForm = document.getElementById('review-form');
     const showFormButton = document.getElementById('show-form-button');
     let selectedRating = 0;
-    const dotenv = require('dotenv');
-    dotenv.config();
-
-    
+        
     // Navigation Bar
     const menubar = document.getElementById('menubar');
     const navLinks = document.querySelector('.nav-links');
