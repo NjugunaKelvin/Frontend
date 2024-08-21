@@ -413,6 +413,7 @@ footer{
 @media (max-width: 600px)  {
     body {
         font-size: 16px;
+        overflow-x: hidden;
     }
     .navbar{
         flex-direction: row;
