@@ -413,6 +413,7 @@ footer{
 @media (max-width: 600px)  {
     body {
         font-size: 16px;
+        overflow-x: hidden;
     }
     .navbar{
         flex-direction: row;
@@ -436,7 +437,7 @@ footer{
             background: rgb(15, 5, 1);
             flex-direction: column;
             width: 60%;
-            transform: translateX(185%);
+            opacity: 0;
         }
         .menubar{
             margin-left: 30%;
@@ -546,7 +547,7 @@ footer{
             background: rgb(15, 5, 1);
             flex-direction: column;
             width: 70%;
-            transform: translateX(185%);
+            opacity: 0;
         }
         .menubar{
             margin-left: 30%;
@@ -694,11 +695,15 @@ footer{
     background: red;
 }
 .nav-links.nav-active {
-    transform: translateX(0);
-    transition: 0.3s ease-out;
+    opacity: 1;
+    transform: translateY(-11px);
+    transition: 0.2s ease-out;
+    transition: transform 0.2s ease;
 }
 
-
+.nav-links.disappear{
+    opacity: 0;
+}
 
 
 

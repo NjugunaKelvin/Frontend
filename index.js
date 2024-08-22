@@ -12,6 +12,33 @@ document.addEventListener('DOMContentLoaded', () => {
         navLinks.classList.toggle('nav-active');
         menubar.classList.toggle('toggle');
     });
+    // Disappear after click
+    const links = document.querySelector('.home-link');
+    links.addEventListener('click', ()=>{
+        navLinks.classList.toggle('disappear');
+        menubar.classList.remove('toggle');
+    });
+
+    const about = document.querySelector('.about-link');
+    about.addEventListener('click', ()=>{
+        navLinks.classList.toggle('disappear');
+        menubar.classList.remove('toggle');
+    });
+
+    const cake = document.querySelector('.cakes-link');
+    cake.addEventListener('click', ()=>{
+        navLinks.classList.toggle('disappear');
+        menubar.classList.remove('toggle');
+    });
+
+    const contact = document.querySelector('.contact-link');
+    contact.addEventListener('click', ()=>{
+        navLinks.classList.toggle('disappear');
+        menubar.classList.remove('toggle');
+    });
+    
+    
+    
     
     function fetchReviews() {
         fetch('http://localhost:3000/reviews')
